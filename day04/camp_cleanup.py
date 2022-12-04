@@ -1,4 +1,5 @@
 import os
+from typing import List
 
 
 def isSectionsInPartnerSection(section, partner_section):
@@ -24,7 +25,7 @@ def isSectionsPartlyInPartnerSection(section, partner_section):
     return False
 
 
-def findOverlappingPairNumber(file: str):
+def findOverlappingPairNumber(file: str) -> List[int]:
     current_python_path = os.path.dirname(os.path.abspath(__file__))
     filepath = os.path.join(current_python_path, file)
     with open(filepath) as f:
