@@ -7,7 +7,7 @@ import re
 def moveXFromTo(x, source, dest):
 
     for nb in range(0, x, 1):
-        dest.insert(0, source.pop(0))
+        dest.insert(nb, source.pop(0))
     return source, dest
 
 
